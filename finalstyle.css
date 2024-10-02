@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Brush Script MT', cursive; /* Use the same font for the entire layout */
+    margin: 0;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.layout-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Upper Section Layout */
+.upper-section {
+    display: flex;
+    height: 60vh; 
+    gap: 11px;
+}
+
+.box-pink {
+    background-color: #FF6B7A;
+    border-top-left-radius: 15px;
+    flex: 27; }
+
+.box-brown {
+    background-color: transparent; 
+    flex: 33; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+    width: 100%;
+    gap: 10px; 
+}
+
+.info-number {
+    background-color: #3D2B27; 
+    flex: 40; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.info-name {
+    background-color: #E0E0E0; 
+    flex: 60;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw; 
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-purple {
+    background-color: #514789;
+    border-top-right-radius: 15px;
+    flex: 30;
+}
+
+/* Lower Section Layout */
+.lower-section {
+    display: flex;
+    height: 30vh; 
+    gap: 11px;
+}
+
+.box-green {
+    background-color: #044A10;
+    font-size: 48px;
+    border-bottom-left-radius: 15px;
+    flex: 56; 
+}
+
+.box-dark-brown {
+    background-color: #3D2B27;
+    font-size: 32px;
+    border-bottom-right-radius: 15px;
+    flex: 34; 
+}
+
+/* Icon Styling */
+.icon {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .upper-section,
+    .lower-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box {
+        flex: 1;
+    }
+}
