@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Brush Script MT', cursive; /* Use the same font for the entire layout */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #000000;
@@ -27,7 +27,7 @@ body {
 /* Upper Section Layout */
 .upper-section {
     display: flex;
-    height: 60vh; 
+    height: 60vh;
     gap: 11px;
 }
 
@@ -37,8 +37,8 @@ body {
     flex: 27; }
 
 .box-brown {
-    background-color: transparent; 
-    flex: 33; 
+    background-color: transparent;
+    flex: 33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,37 +47,41 @@ body {
 
 .info-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .info-number {
-    background-color: #3D2B27; 
-    flex: 40; 
+    background-color: #3D2B27;
+    flex: 40;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    font-size: clamp(16px, 2vw, 28px);
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.3;
+    overflow-wrap: break-word;
 }
 
 .info-name {
-    background-color: #E0E0E0; 
+    background-color: #E0E0E0;
     flex: 60;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vw; 
+    font-size: clamp(24px, 3vw, 42px);
     text-align: center;
     max-width: 100%;
     width: 100%;
     padding: 20px 0;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -91,7 +95,7 @@ body {
 /* Lower Section Layout */
 .lower-section {
     display: flex;
-    height: 30vh; 
+    height: 30vh;
     gap: 11px;
 }
 
@@ -99,14 +103,14 @@ body {
     background-color: #044A10;
     font-size: 48px;
     border-bottom-left-radius: 15px;
-    flex: 56; 
+    flex: 56;
 }
 
 .box-dark-brown {
     background-color: #3D2B27;
     font-size: 32px;
     border-bottom-right-radius: 15px;
-    flex: 34; 
+    flex: 34;
 }
 
 /* Icon Styling */
